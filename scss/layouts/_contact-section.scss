@@ -1,0 +1,51 @@
+.contact-section {
+  padding-bottom: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 96px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      grid-gap: 32px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  &__map {
+    height: 176px;
+    width: 100%;
+    margin: 0;
+    border-radius: 16px;
+    border: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+    }
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 100%;
+      height: 595px;
+    }
+  }
+}

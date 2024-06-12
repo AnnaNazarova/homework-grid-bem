@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Хлебные Радости</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/" title="Логотип Хлебные Радости">
+              <img src="./images/logo.svg" alt="Логотип Хлебные Радости" title="Логотип Хлебные Радости" />
+            </a>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="#traditions-section" title="Наши традиции">Наши традиции</a>
+              </li>
+              <li><a class="link" href="#chefs-section" title="Шеф-повара">Шеф-повара</a></li>
+              <li><a class="link" href="#job-section" title="Работа">Работа</a></li>
+              <li><a class="link" href="#contact-section" title="Контакты">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="header__button button modal-btn-open" type="button">
+            Обратный звонок
+          </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+
+            <ul class="mobile-menu__list">
+              <li>
+                <a class="mobile-menu__link" href="#traditions-section">
+                  Наши традиции
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#chefs-section">
+                  Шеф-повара
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#job-section">Работа</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#contact-section">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-section__title">
+            <span class="text-brand">Хлебные</span> радости
+          </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Обратный звонок
+          </button>
+        </div>
+      </section>
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">Большой спрос на рынке</li>
+            <li class="advantages-section__item">
+              Доступные по бюджету форматы
+            </li>
+            <li class="advantages-section__item">
+              Опытная управленческая команда
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="traditions-section section" id="traditions-section">
+        <div class="container">
+          <div class="traditions-section__container">
+            <div class="traditions-section__content">
+              <h2 class="traditions-section__title section__title">
+                Новый формат традиций
+              </h2>
+              <p>
+                <span class="text-brand text-bold text-uppercase">
+                 Хлебные Радости
+                </span>
+                — это пекарня, которая взяла все лучшее, и сохранила вкус
+                традиционная выпечка и натуральность ингредиентов.
+              </p>
+              <p
+                class="traditions-section__text traditions-section__text--limited"
+              >
+                Мы работаем как самые известные сети.
+                <span class="text-brand text-bold">
+                  5 минут и заказ готов.
+                </span>
+                А&nbsp;еще у&nbsp;наших пекарен стильный дизайн и&nbsp;высокое качество обслуживание!
+              </p>
+            </div>
+            <img
+              class="traditions-section__image"
+              srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
+              src="./images/baker-man.jpg"
+              alt="Мужчина пекарь смотрит на батоны с улыбкой."
+            />
+          </div>
+        </div>
+      </section>
+      <section class="chefs-section section" id="chefs-section">
+        <div class="container">
+          <h2
+            class="chefs-section__title section__title section__title--centered"
+          >
+            Наши <br />
+            <span class="text-brand-dark">шеф-повара</span>
+          </h2>
+          <ul class="chefs-section__list">
+            <li class="chefs-section__item">
+              <article class="chef-card">
+                <img
+                  class="chef-card__photo"
+                  src="./images/nastya-chef.jpg"
+                  alt="Nastya chef"
+                />
+                <div>
+                  <h3 class="chef-card__title">Настя</h3>
+                  <p class="chef-card__text">Привет, я Настя!</p>
+                  <p class="chef-card__text">
+                    Уже 10 лет, я воплощаю.<br>
+                    у жизни интересные и вкусные идеи.
+                  </p>
+                  <p class="chef-card__text">
+                    Я выпечу для вас.<br>
+                    самые вкусные изделия!
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="chefs-section__item">
+              <article class="chef-card">
+                <img
+                  class="chef-card__photo"
+                  src="./images/vlad-chef.jpg"
+                  alt="Vlad chef"
+                />
+                <div>
+                  <h3 class="chef-card__title">Влад</h3>
+                  <p class="chef-card__text">Привет, я Влад!</p>
+                  <p class="chef-card__text">
+                    Мой кодитерский стаж уже 18 лет. «Хлебные радости» — это наша
+                    любовь, с которой мы делимся каждый раз с Вами через нашу
+                    выпечку.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="job-section section" id="job-section">
+        <div class="container">
+          <h2 class="job-section__title section__title section__title--centered">
+            Работа
+          </h2>
+        </div>
+      </section>
+      <section class="contact-section section" id="contact-section">
+        <div class="container">
+          <div class="contact-section__container">
+            <div class="contact-section__form">
+              <h2 class="contact-section__title section__title">
+                Присоединяйся к сети
+              </h2>
+              <p>Заполни форму, чтобы мы связались с тобой!</p>
+              <form name="contact-form" autocomplete="off">
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-name">
+                    Имя
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Имя"
+                    required
+                  />
+                </div>
+
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel">
+                    Телефон
+                  </label>
+                  <input
+                    class="input__control"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Телефон"
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </div>
+
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Электронная почта
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Электронная почта"
+                    required
+                  />
+                </div>
+
+                <button class="contact-section__button button" type="submit">
+                  Заказать звонок
+                </button>
+                <p class="form-terms">
+                  Нажимая на кнопку я соглашаюсь с
+                  <a class="form-terms__link" href="#">
+                    политикой конфиденциальности
+                  </a>
+                </p>
+              </form>
+            </div>
+          <div class="contact-section__frame">
+            <iframe
+                class="contact-section__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.95362381993!2d37.489189377398276!3d55.794043188813276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54853511c0001%3A0x9d4ca8d0d9d8fa5a!2z0JzQsNGA0YjQsNC70LAg0JHQuNGA0Y7Qt9C-0LLQsCDRg9C7LiwgNDEsINCh0LXQstC10YDQvi3Ql9Cw0L_QsNC00L3Ri9C5INCQ0LTQvNC40L3QuNGB0YLRgNCw0YLQuNCy0L3Ri9C5INCe0LrRgNGD0LMsINCg0L7RgdGB0LjRjywgMTIzMDYw!5e0!3m2!1sru!2s!4v1718191588488!5m2!1sru!2s"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="./images/logo.svg" alt="Логотип Хлебные Радости" />
+              </a>
+            </div>
+            <ul class="footer__menu">
+              <li><a class="link" href="#">Наши традиции</a></li>
+              <li><a class="link" href="#">Шеф-повара</a></li>
+              <li><a class="link" href="#">Работа</a></li>
+              <li><a class="link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <address class="footer__address">
+            <div class="footer__contacts">
+              <ul class="footer__address-list">
+                <li>
+                  <a class="footer__address-link" href="tel:+79450000007" title="Позвонить +7 (945) 000-00-07">
+                    +7 (945) 000-00-07
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="mailto:shopbakery@yandex.ru"
+                    title="shopbakery@yandex.ru"
+                  >
+                    shopbakery@yandex.ru
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="https://maps.app.goo.gl/LSCn5CKQTJ5ebLo5A"
+                    target="_blank"
+                  >
+                    г. &nbsp;Москва, ул.&nbsp;Маршала Бирюзова, д.&nbsp;41
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__socials">
+                <a href="#">
+                  <svg class="footer__socials-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="footer__socials-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__address-info">
+              <a class="footer__address-link" href="#" target="_blank">
+                Политика конфиденциальности
+              </a>
+              <p class="footer__address-copyright">&copy; 2024 Данные защищены</p>
+            </div>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Заказать звонок </h2>
+        <p class="modal__text">
+          Оставьте заявку и наш специалист свяжется с Вами!
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">
+              Имя
+            </label>
+            <input
+              class="input__control"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Имя"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel">
+              Телефон
+            </label>
+            <input
+              class="input__control"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email">
+              Электронная почта
+            </label>
+            <input
+              class="input__control"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Электронная почта"
+              required
+            />
+          </div>
+
+          <button class="modal__button button" type="submit">
+            Заказать звонок
+          </button>
+          <p class="form-terms">
+            Нажимая на кнопку я соглашаюсь с
+            <a class="form-terms__link" href="#">политикой конфиденциальности
+            </a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
